@@ -1,0 +1,44 @@
+TechMart Electronics — Account & Platform User Guide
+
+CREATING AND MANAGING YOUR ACCOUNT
+- Sign up using email, or via Google/Apple ID for faster checkout
+- Update your profile, saved addresses, and payment methods under "Account Settings"
+- Enable two-factor authentication under "Security Settings" for added account protection
+
+PLACING AN ORDER
+1. Add items to your cart from the product page
+2. Review your cart and apply any valid coupon code
+3. Select a delivery address and preferred delivery speed
+4. Choose a payment method and confirm the order
+5. An order confirmation is sent via email and SMS immediately after payment
+
+MANAGING ORDERS
+All orders can be viewed and managed under "My Orders":
+- Track shipment status and estimated delivery
+- Cancel an order (before it's out for delivery)
+- Initiate a return or replacement (after delivery, within the return window)
+- Download invoices for any past order
+
+WISHLIST AND SAVED ITEMS
+Use the heart icon on any product page to save it to your Wishlist. Wishlist items are not reserved — stock and pricing may change before purchase.
+
+NOTIFICATIONS AND ALERTS
+Manage email/SMS notification preferences under "Account Settings > Notifications," including:
+- Order and delivery updates
+- Back-in-stock alerts for wishlisted items
+- Price-drop alerts
+- Promotional offers (opt-in only)
+
+USING LIVE CHAT SUPPORT
+Live chat is available 24/7 via the chat icon on any page. For faster resolution, have your order ID ready before starting a chat.
+
+MOBILE APP FEATURES
+The TechMart app (iOS and Android) includes all website features plus:
+- Barcode scanner for in-store price checks
+- Push notifications for order updates
+- Store locator with real-time stock availability at nearby stores
+
+DELETING YOUR ACCOUNT
+Account deletion requests can be submitted via "Account Settings > Privacy > Delete Account," or by emailing privacy@techmart.com. Order history is retained for legal/tax purposes even after account deletion, per applicable data retention regulations.
+
+For any platform issues, contact support@techmart.com or use in-app live chat.
