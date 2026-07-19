@@ -4,8 +4,7 @@ from groq import Groq
 from dotenv import load_dotenv
 
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
-from rag.retriever import DocumentRetriever
-
+from rag.retriever import get_retriever
 load_dotenv()
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
@@ -24,7 +23,7 @@ Guidelines:
 class TechnicalAgent:
     def __init__(self):
         self.system_prompt = TECHNICAL_SYSTEM_PROMPT
-        self.retriever = DocumentRetriever()
+        self.retriever = get_retriever()
 
     def handle(self, message: str, conversation_history: list = None):
         context = self.retriever.get_context_string(message, top_k=3)
