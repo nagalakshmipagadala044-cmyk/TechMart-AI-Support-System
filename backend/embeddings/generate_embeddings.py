@@ -1,17 +1,18 @@
-from sentence_transformers import SentenceTransformer
-import pandas as pd
+import sys
 import os
+import pandas as pd
 import pickle
+import numpy as np
 
-# Load the embedding model (same family used for Plastic Pulse-style local ML work)
-model = SentenceTransformer("all-MiniLM-L6-v2")
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
+from shared_resources import embed_text
 
 # Load Banking77-derived intent examples
 banking_df = pd.read_csv("datasets/processed/banking77_techmart_clean.csv")
 
 # Generate embeddings for each example query
 print("Generating embeddings for intent examples...")
-embeddings = model.encode(banking_df["query"].tolist(), show_progress_bar=True)
+embeddings = np.array(embed_text(banking_df["query"].tolist()))
 
 # Save embeddings + metadata together
 os.makedirs("vectorstore", exist_ok=True)

@@ -5,7 +5,7 @@ import sys
 import os
 
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
-from shared_resources import get_embedding_model
+from shared_resources import embed_text
 
 class IntentVectorStore:
     def __init__(self, embeddings_path="vectorstore/intent_embeddings.pkl"):
@@ -20,12 +20,10 @@ class IntentVectorStore:
         self.index = faiss.IndexFlatL2(dimension)
         self.index.add(self.embeddings)
 
-        self.model = get_embedding_model()
-
         print(f"FAISS index built with {self.index.ntotal} vectors")
 
     def search(self, query_text, top_k=5):
-        query_vector = self.model.encode([query_text]).astype("float32")
+        query_vector = np.array(embed_text([query_text])).astype("float32")
         distances, indices = self.index.search(query_vector, top_k)
 
         results = []
